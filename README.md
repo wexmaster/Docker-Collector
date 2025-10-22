@@ -36,12 +36,12 @@ docker run -it --rm \
 **Arrancar Docker con Token:**
 ```bash
 docker run -it --rm \
-  -v $(pwd)/secret:/secret\ 
-  -e TOKEN="token" \
+  -v "$(pwd)/secret:/secret" \
   -e OTEL_NS="user.xxxxxx" \
   -e OTEL_REGION="work-01.xxxx.xxxxxx" \
   -e OTEL_MRID="mr-opentelemetry" \
   -e OTEL_METRICSET="opentelemetry_metrics" \
+  -e TOKEN="token" \
   -p 4317:4317 -p 4318:4318 -p 13133:13133 \
   monitoring-otel:v0.135.0
 ```
