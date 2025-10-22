@@ -1,0 +1,29 @@
+# DIRECCORIOS
+_build
+.vscode/
+.devcontainer/
+.__MACOSX/
+certs/
+
+# Archivos de build
+#build/
+*.out
+*.exe
+*.bin
+#*.linux
+__debug_bin*
+
+# Bases de datos SQLite generadas localmente
+*.db
+*.db-wal
+*.db-shm
+
+# Certificados locales
+secret/ca.crt
+secret/cfs-path-bot.pem
+secret/cfs-path-bot-unlocked.key
+# Otros
+.DS_Store
+*.log
+nomad/*
+

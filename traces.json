@@ -1,0 +1,49 @@
+{
+  "resourceSpans": [
+    {
+      "resource": {
+        "attributes": [
+          {"key": "telemetry.sdk.language", "value": {"stringValue": "python"}},
+          {"key": "telemetry.sdk.name", "value": {"stringValue": "opentelemetry"}},
+          {"key": "telemetry.sdk.version", "value": {"stringValue": "1.27.0"}},
+          {"key": "service.name", "value": {"stringValue": "ubuntu-otel-sample"}}
+        ]
+      },
+      "scopeSpans": [
+        {
+          "scope": {"name": "__main__"},
+          "spans": [
+            {
+              "traceId": "12345678901234567890123456789012",
+              "spanId": "1234567890123456",
+              "name": "child_operation_1",
+              "kind": "SPAN_KIND_INTERNAL",
+              "startTimeUnixNano": "1760630201969091000",
+              "endTimeUnixNano": "1760630202069091000",
+              "attributes": [
+                {"key": "operation.kind", "value": {"stringValue": "child"}},
+                {"key": "mrid", "value": {"stringValue": "Child1MRID"}},
+                {"key": "region", "value": {"stringValue": "work-01.nextgen.igrupobbva"}},
+                {"key": "ns", "value": {"stringValue": "user.o014313"}}
+              ]
+            },
+            {
+              "traceId": "12345678901234567890123456789012",
+              "spanId": "1234567890123455",
+              "name": "parent_operation",
+              "kind": "SPAN_KIND_INTERNAL",
+              "startTimeUnixNano": "1760630201969091000",
+              "endTimeUnixNano": "1760630202069091000",
+              "attributes": [
+                {"key": "operation.kind", "value": {"stringValue": "parent"}},
+                {"key": "mrid", "value": {"stringValue": "mr-opentelemetry"}},
+                {"key": "region", "value": {"stringValue": "work-01.nextgen.igrupobbva"}},
+                {"key": "ns", "value": {"stringValue": "user.o014313"}}
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

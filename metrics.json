@@ -1,0 +1,68 @@
+{
+  "resourceMetrics": [
+    {
+      "resource": {
+        "attributes": [
+          {"key": "telemetry.sdk.language", "value": {"stringValue": "python"}},
+          {"key": "telemetry.sdk.name", "value": {"stringValue": "opentelemetry"}},
+          {"key": "telemetry.sdk.version", "value": {"stringValue": "1.27.0"}},
+          {"key": "service.name", "value": {"stringValue": "ubuntu-otel-sample"}}
+        ]
+      },
+      "scopeMetrics": [
+        {
+          "scope": {"name": "__main__"},
+          "metrics": [
+            {
+              "name": "demo_requests_total",
+              "description": "Número de requests simuladas",
+              "unit": "1",
+              "sum": {
+                "dataPoints": [
+                  {
+                    "startTimeUnixNano": "1760630201969091000",
+                    "timeUnixNano": "1760630202069091000",
+                    "asInt": "5",
+                    "attributes": [
+                      {"key": "route", "value": {"stringValue": "/child1"}},
+                      {"key": "method", "value": {"stringValue": "GET"}},
+                      {"key": "mrid", "value": {"stringValue": "autogen"}}
+                    ]
+                  },
+                  {
+                    "startTimeUnixNano": "1760630201969091000",
+                    "timeUnixNano": "1760630202069091000",
+                    "asInt": "3",
+                    "attributes": [
+                      {"key": "route", "value": {"stringValue": "/grandchild1"}},
+                      {"key": "method", "value": {"stringValue": "POST"}},
+                      {"key": "mrid", "value": {"stringValue": "autogen"}}
+                    ]
+                  }
+                ],
+                "aggregationTemporality": "AGGREGATION_TEMPORALITY_CUMULATIVE",
+                "isMonotonic": true
+              }
+            },
+            {
+              "name": "demo_cpu_usage",
+              "description": "Uso CPU simulado",
+              "unit": "percent",
+              "gauge": {
+                "dataPoints": [
+                  {
+                    "timeUnixNano": "1760630201969091000",
+                    "asInt": "42",
+                    "attributes": [
+                      {"key": "unit", "value": {"stringValue": "percent"}}
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "resourceLogs": [
+    {
+      "resource": {
+        "attributes": [
+          {"key": "telemetry.sdk.language", "value": {"stringValue": "python"}},
+          {"key": "telemetry.sdk.name", "value": {"stringValue": "opentelemetry"}},
+          {"key": "telemetry.sdk.version", "value": {"stringValue": "1.27.0"}},
+          {"key": "service.name", "value": {"stringValue": "ubuntu-otel-sample"}}
+        ]
+      },
+      "scopeLogs": [
+        {
+          "scope": {"name": "opentelemetry.sdk._logs._internal"},
+          "logRecords": [
+            {
+              "timeUnixNano": "1760630201969091000",
+              "observedTimeUnixNano": "1760630202069091000",
+              "severityNumber": "SEVERITY_NUMBER_WARN",
+              "severityText": "WARN",
+              "body": {"stringValue": "Child operation executed custom"},
+              "attributes": [
+                {"key": "iteration", "value": {"intValue": "1"}},
+                {"key": "mrid", "value": {"stringValue": "Child1MRID"}},
+                {"key": "ns", "value": {"stringValue": "user.o014313"}},
+                {"key": "region", "value": {"stringValue": "work-01.nextgen.igrupobbva"}}
+              ],
+              "flags": 1
+            },
+            {
+              "timeUnixNano": "1760630201969091000",
+              "observedTimeUnixNano": "1760630202069091000",
+              "severityNumber": "SEVERITY_NUMBER_INFO",
+              "severityText": "INFO",
+              "body": {"stringValue": "Parent operation completed"},
+              "attributes": [
+                {"key": "iteration", "value": {"intValue": "1"}},
+                {"key": "mrid", "value": {"stringValue": "mr-opentelemetry"}},
+                {"key": "ns", "value": {"stringValue": "user.o014313"}},
+                {"key": "region", "value": {"stringValue": "work-01.nextgen.igrupobbva"}}
+              ],
+              "flags": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
